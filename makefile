@@ -1,6 +1,7 @@
 all: tmux zsh emacs
 
 tmux:
+	git clone -C ~ https://github.com/gpakosz/.tmux.git
 	ln -sf $(CURDIR)/tmux.conf ~/.tmux.conf
 
 zsh: zshrc
