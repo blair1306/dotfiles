@@ -4,6 +4,7 @@ tmux:
 	ln -sf $(CURDIR)/tmux.conf ~/.tmux.conf
 
 zsh: zshrc
+	sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	ln -sf $(CURDIR)/zshrc ~/.zshrc
 
 emacs: init.el
