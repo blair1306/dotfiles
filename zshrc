@@ -12,7 +12,8 @@
 #ZSH_THEME="sonicradish"
 #ZSH_THEME="bureau"
 #ZSH_THEME="refined"
-ZSH_THEME="wedisagree"
+#ZSH_THEME="wedisagree"
+ZSH_THEME="amuse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
