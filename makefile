@@ -1,8 +1,10 @@
 all: tmux zsh emacs
 
 tmux:
-	git clone -C ~ https://github.com/gpakosz/.tmux.git
+	git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	ln -sf $(CURDIR)/tmux.conf ~/.tmux.conf
+	tmux source ~/.tmux.conf
 
 zsh: zshrc
 	sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
