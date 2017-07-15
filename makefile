@@ -1,4 +1,4 @@
-all: tmux zsh emacs
+all: tmux zsh emacs cgdb
 
 tmux:
 	git clone https://github.com/gpakosz/.tmux.git ~/.tmux
@@ -13,4 +13,8 @@ zsh: zshrc
 emacs: init.el
 	mkdir ~/.emacs.d
 	ln -sf $(CURDIR)/init.el ~/.emacs.d/init.el
+
+cgdb: cgdbrc
+	mkdir ~/.cgdb
+	ln -sf $(CURDIR)/cgdbrc ~/.cgdb/cgdbrc
 
