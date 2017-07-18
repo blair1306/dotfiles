@@ -91,7 +91,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
+#alias vim="nvim"
 alias l="ls -CF"
 alias yavide="/usr/bin/vim --servername yavide -f -N -u /home/jon/workspace/yavide/bin/yavide/.vimrc -u /opt/yavide/.vimrc"
 
