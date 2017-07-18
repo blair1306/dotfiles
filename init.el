@@ -26,7 +26,7 @@
 ;; list the packages you want
 (defvar package-list)
 (setq package-list '(async auctex auto-complete autopair clang-format cmake-ide
-                           cmake-mode company company-irony
+                           cmake-mode company company-irony company-rtags
                            company-irony-c-headers dash epl flycheck
                            flycheck-irony flycheck-pyflakes 
                            google-c-style helm helm-core helm-ctest

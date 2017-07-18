@@ -34,3 +34,4 @@ vim: vimrc
 	git clone https://github.com/valloric/youcompleteme $(BUNDLE_DIR)/YouCompleteMe
 	git clone https://github.com/bling/vim-airline $(BUNDLE_DIR)/vim-airline
 	git clone https://github.com/scrooloose/syntastic $(BUNDLE_DIR)/syntastic
+	git clone https://github.com/scrooloose/nerdcommenter.git $(BUNDLE_DIR)/nerdcommenter
