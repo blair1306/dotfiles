@@ -59,7 +59,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git adb man sudo gitignore pip cp python history emacs autojump fasd jump colorize colored-man-pages command-not-found extract screen tmux web-search gnu-utils pyenv virtualenv debian battery lol themes)
+plugins=(git adb man sudo gitignore pip cp python history emacs autojump fasd jump colorize colored-man-pages command-not-found extract screen tmux web-search gnu-utils pyenv virtualenv debian battery lol themes zsh-suggestions)
 
 source $ZSH/oh-my-zsh.sh
 

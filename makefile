@@ -9,6 +9,7 @@ tmux:
 zsh: zshrc
 	sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	ln -sf $(CURDIR)/zshrc ~/.zshrc
+	git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 emacs: init.el
 	mkdir ~/.emacs.d
