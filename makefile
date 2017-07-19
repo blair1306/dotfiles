@@ -1,4 +1,4 @@
-all: tmux zsh emacs cgdb vim
+all: tmux zsh emacs cgdb vim gdb
 
 tmux:
 	git clone https://github.com/gpakosz/.tmux.git ~/.tmux
@@ -35,3 +35,6 @@ vim: vimrc
 	git clone https://github.com/bling/vim-airline $(BUNDLE_DIR)/vim-airline
 	git clone https://github.com/scrooloose/syntastic $(BUNDLE_DIR)/syntastic
 	git clone https://github.com/scrooloose/nerdcommenter.git $(BUNDLE_DIR)/nerdcommenter
+
+gdb: gdbinit
+	ln -sf $(CURDIR)/gdbinit ~/.gdbinit
