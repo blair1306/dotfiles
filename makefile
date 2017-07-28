@@ -20,7 +20,7 @@ cgdb: cgdbrc
 	ln -sf $(CURDIR)/cgdbrc ~/.cgdb/cgdbrc
 
 vim: vimrc
-	#mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+	mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 		curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	ln  -sf $(CURDIR)/vimrc ~/.vimrc
 	BUNDLE_DIR := ~/.vim/bundle
