@@ -41,11 +41,11 @@ gdb: gdbinit
 	ln -sf $(CURDIR)/gdbinit ~/.gdbinit
 
 fish:
-	#sudo apt-get install fish
+	sudo apt-get install fish
 	curl -L https://get.oh-my.fish | fish
 	omf install bang-bang
 	omf install cmorrel
 	omf install fish_logo
-	OMF_CONF := ~/.config/omf/
-	ln -sf $(CURDIR)/init.fish $(OMF_CONF)/init.fish
-	ln -sf $(CURDIR)/before.init.fish $(OMF_CONF)/before.init.fish
+	OMF_CONFIG := ~/.config/omf/
+	ln -sf $(CURDIR)/init.fish $OMF_CONFIG/init.fish
+	ln -sf $(CURDIR)/before.init.fish $OMF_CONFIG/before.init.fish
