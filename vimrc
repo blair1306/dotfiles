@@ -15,7 +15,7 @@ set hlsearch
 
 set laststatus=2
 
-set background=light
+set background=dark
 colorscheme solarized
 
 
@@ -24,3 +24,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 "airline
 
+"tagbar
+"toggle tagbar with <f8>
+nmap <F8> :TagbarToggle<CR>
+"tagbar

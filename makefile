@@ -1,3 +1,5 @@
+
+
 all: tmux zsh emacs cgdb vim gdb fish
 
 tmux:
@@ -20,8 +22,8 @@ cgdb: cgdbrc
 	ln -sf $(CURDIR)/cgdbrc ~/.cgdb/cgdbrc
 
 vim: vimrc
-	mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-		curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+	#mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+	#	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	ln  -sf $(CURDIR)/vimrc ~/.vimrc
 	BUNDLE_DIR := ~/.vim/bundle
 	git clone https://github.com/tpope/vim-fugitive $(BUNDLE_DIR)/vim-fugitive
