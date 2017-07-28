@@ -1,4 +1,4 @@
-all: tmux zsh emacs cgdb vim gdb
+all: tmux zsh emacs cgdb vim gdb fish
 
 tmux:
 	git clone https://github.com/gpakosz/.tmux.git ~/.tmux
@@ -39,3 +39,13 @@ vim: vimrc
 
 gdb: gdbinit
 	ln -sf $(CURDIR)/gdbinit ~/.gdbinit
+
+fish:
+	#sudo apt-get install fish
+	curl -L https://get.oh-my.fish | fish
+	omf install bang-bang
+	omf install cmorrel
+	omf install fish_logo
+	OMF_CONF := ~/.config/omf/
+	ln -sf $(CURDIR)/init.fish $(OMF_CONF)/init.fish
+	ln -sf $(CURDIR)/before.init.fish $(OMF_CONF)/before.init.fish
