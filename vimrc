@@ -4,6 +4,10 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
+set number
+
+set mouse=a
+
 set autoindent
 set backspace=indent,eol,start
 
@@ -15,7 +19,8 @@ set hlsearch
 
 set laststatus=2
 
-set background=dark
+set background=light
+let g:solarized_termcolors=256
 colorscheme solarized
 
 
@@ -28,3 +33,8 @@ let g:airline_powerline_fonts = 1
 "toggle tagbar with <f8>
 nmap <F8> :TagbarToggle<CR>
 "tagbar
+
+
+"youcompleteme
+map <C-l> :YcmCompleter GoTo<CR>
+"!youcompleteme

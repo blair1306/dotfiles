@@ -1,4 +1,7 @@
 :set autosourcereload
 :set color
 :set debugwincolor
+:set ignorecase
+:set sld=block
+:set wso=vertical
 

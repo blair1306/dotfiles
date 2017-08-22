@@ -34,7 +34,9 @@
                            hungry-delete irony
                            let-alist levenshtein magit markdown-mode pkg-info
                            popup rtags seq solarized-theme vlf web-mode
-                           window-numbering writegood-mode yasnippet))
+                           window-numbering writegood-mode yasnippet
+			   dracula-theme github-modern-theme
+			   realgud))
 ;; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
@@ -290,7 +292,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default)))
+    ("01e067188b0b53325fc0a1c6e06643d7e52bc16b6653de2926a480861ad5aa78" "3eb93cd9a0da0f3e86b5d932ac0e3b5f0f50de7a0b805d4eb1f67782e9eb67a4" "b747fb36e99bc7f497248eafd6e32b45613ee086da74d1d92a8da59d37b9a829" "44c566df0e1dfddc60621711155b1be4665dd3520b290cb354f8270ca57f8788" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default)))
  '(inhibit-startup-screen t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -306,9 +308,6 @@
 (global-set-key (kbd "C--") 'shrink-window)
 (global-set-key (kbd "C-=") 'enlarge-window)
 (global-set-key (kbd "C-M-.") 'rtags-find-symbol)
-
-
-
 ;; turn on highlight matching brackets when cursor is on one
 (show-paren-mode 1)
 
@@ -327,4 +326,11 @@
 (require 'autopair)
 
 
+;; my own config goes here
 
+;; line number
+;;(global-linum-mode t)
+;;(when (version<= "26.0.50" emacs-version )
+;;  (global-display-line-numbers-mode))
+
+;; ! here ends my own config
